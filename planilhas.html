@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estrutura de dados</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet2" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">VOLTAR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudo">
+        <div class="div_cont">
+            <div class="paragrafo">
+                <h1 class="titulo">Graficos de execuções</h1>
+                <p>
+                    Abaixo são apresentados os gráficos de tempo de execução em segundos de cada algoritmo de ordenação.
+                    Foram executados com coleções de cinco tamanhos diferentes: 10.000, 50.000, 100.000, 500.000 e
+                    1.000.000. Foi realizada a ordenação de números inteiros na ordem crescente.
+                </p>
+                <p>
+                    São apresentados três casos: pior caso(cinza), quando o vetor inicialmente em ordem decrescente.
+                    Caso médio(laranja), quando o vetor está desordenado com uma coleção de números aleatórios. Melhor
+                    caso(azul), quando o vetor ja se encontra ordenado. Basta clicar no pontos em branco para passar de
+                    um gráfico a outro.
+                </p>
+            </div>
+            <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="grafico/bubble.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="grafico/counting.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="grafico/bucket.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide4" name="slide">
+                    <label for="slide4"></label>
+                    <img src="grafico/heap.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide5" name="slide">
+                    <label for="slide5"></label>
+                    <img src="grafico/isertion.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide6" name="slide">
+                    <label for="slide6"></label>
+                    <img src="grafico/merge.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide7" name="slide">
+                    <label for="slide7"></label>
+                    <img src="grafico/quick.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide8" name="slide">
+                    <label for="slide8"></label>
+                    <img src="grafico/radix.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide9" name="slide">
+                    <label for="slide9"></label>
+                    <img src="grafico/selection.png" />
+                </li>
+                <li>
+                    <input type="radio" id="slide10" name="slide">
+                    <label for="slide10"></label>
+                    <img src="grafico/shell.png" />
+                </li>
+            </ul>
+            <div class="paragrafo">
+                <h1 class="titulo">Graficos de comparação</h1>
+                <p>
+                    Nos graficos abaixo serão apresentados os tempos de execução dos algoritmos comparando uns aos
+                    outros, com base em cada caso(pior, melhor e médio). Cada linha representa um algoritmo, cada coluna é a quantidade de elementos ordenados e nas células o tempo de execução em segundos. 
+                </p>
+            </div>
+            <div class="imagens2">
+                <div class="imagem"><img src="grafico/melhorcaso-2.png"></div>
+                <div class="imagem"><img src="grafico/melhorcaso.png"></div>
+            </div>
+            <div class="imagens2">
+                <div class="imagem"><img src="grafico/caso-medio-2.png"></div>
+                <div class="imagem"><img src="grafico/caso-medio.png"></div>
+            </div>
+            <div class="imagens2">
+                <div class="imagem"><img src="grafico/pior-caso-2.png"></div>
+                <div class="imagem"><img src="grafico/pior-caso.png"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </section>
+    <footer class="rodape">
+        <nav id="nav2">
+            <ul id="menu" role="menu">
+                <li><a href="planilhas.html">TOPO</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+</html>

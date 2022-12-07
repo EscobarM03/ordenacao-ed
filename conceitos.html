@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura de dados</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+        aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="index.html">VOLTAR</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="conteudo">
+    <div class="div_cont">
+      <div class="paragrafo">
+        <h1 class="titulo">Bubble Sort</h1>
+        <p>
+          O bubblesort é um algoritmo de ordenação básico e baixo desempenho. O mecanismo faz a comparação, da esquerda
+          para direita, dos elementos adjacentes de um vetor e realizando a troca caso os elementos estiverem fora de
+          ordem. Esse processo é repetido até que não haja mais a necessidade de troca.
+        </p>
+        <div class="imagem"><img src="imagem/bublesort.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Selection Sort</h1>
+        <p>
+          O selection sort se trata de um algoritmo de ordenação simples, no qual é escolhido um valor e comparado o
+          valor presente nesta posição com os demais valores das posições sua direita quando encontrado um menor valor é
+          realizada a troca, após isso avança uma posição e a comparação novamente é realizada.
+        </p>
+        <div class="imagem"><img src="imagem/selection sort.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Isertion Sort</h1>
+        <p>
+          No primeiro passo pega o menor valor da coleção e coloca na primeira posição do vetor, após esse primeiro
+          passo, é descartada a primeira e considerada a segunda posição onde será inserido o segundo menor valor do
+          vetor. E assim sucessivamente. É um algoritmo estável e muito eficiente para pequenas coleções.
+        </p>
+        <div class="imagem"><img src="imagem/Insertion sort.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Merge Sort</h1>
+        <p>
+          Se trata de algoritmo de ordenação que utilizara da recursividade para diminuir o problema em vários problemas
+          menores através da recursividade. Primeiro passo é dividir o vetor em dois e realizar uma chamada recursiva no
+          qual irá dividir até a menor parte possível. Após a divisão o vetor é montado novamente e a medida que retorna
+          ao tamanho original é realizada a ordenação do vetor.
+        </p>
+        <div class="item"><img src="imagem/merge-sort-1.png"></div>
+        <div class="item"><img src="imagem/merge-sort-2.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Quick Sort</h1>
+        <p>
+          Se trata de algoritmo de ordenação que utilizara da recursividade para diminuir o problema em vários problemas
+          menores através da recursividade. Primeiro passo é dividir o vetor em dois e realizar uma chamada recursiva no
+          qual irá dividir até a menor parte possível. Após a divisão o vetor é montado novamente e a medida que retorna
+          ao tamanho original é realizada a ordenação do vetor.
+        </p>
+        <div class="item"><img src="imagem/quick-sort-2.png"></div>
+        <div class="item"><img src="imagem/quick-sort-2.jpg"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Counting Sort</h1>
+        <p>
+          Se trata de algoritmo de ordenção altamente efeciente e rápido, não utiliza recursividade, não realiza
+          comparações e utiliza memória adicional. A ordenação é feita através da contagem. É realizada a contagem de
+          incidencias do número de um primeiro vetor e adicionado um valor ao indice correspondente no segundo vetor.
+          Após contada todas as incidências, é inserido esses valor de forma ordenada em um terceiro vetor.
+        </p>
+        <div class="item"><img src="imagem/countingsort.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Radix Sort</h1>
+        <p>
+          O radix sort, assim como o count sort, é um algoritmo de ordenação por contagem. Porém ele analisa apenas uma
+          parte por vez do elemento. Em um número de quatro casa decimais será primeiramente análisada a primera casa
+          decimal. E assim sucessivamente até que seja ordenada todas os elementos do vetor.
+        </p>
+        <div class="item"><img src="imagem/radix-1.png"></div>
+        <div class="item"><img src="imagem/radix-2.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Shell Sort</h1>
+        <p>
+          O shell sort é algoritmo de complexidade ainda desconhecida e ainda não possui uma formula fechada. O método
+          se baseia em troca de registros distantes, assim como o processo de algoritmos de inserções o processo é de
+          relizar as inserções. Porém as inserções não são feitas entre elementos adjacentes e sim com uma distândia H
+          entre um e outro.
+        </p>
+        <div class="item"><img src="imagem/shell sort.png"></div>
+
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">heap Sort</h1>
+        <p>
+          O Heap Sort e de tamanho n é implementado utilizando-se uma árvore binária quase completa representada
+          sequencialmente, com a característica de que todo nó possui um valor maior ou igual aos valores armazenados em
+          seus filhos, caso estes existam.
+          Após a arvore estando construída é criado o novo vetor percorrendo a arvore em pré ordem. Dessa forma o
+          algoritmo utiliza memória adiciona e possui uma complexidade quase constante.
+        </p>
+        <div class="item"><img src="imagem/heap-sort-1.png"></div>
+        <div class="item"><img src="imagem/heap-sort-2.png"></div>
+      </div>
+      <div class="paragrafo">
+        <h1 class="titulo">Bucket Sort</h1>
+        <p>
+          O Bucket sort é um algoritmo que realiza a divisão de um vetor em um numero finito de baldes e dentro desses
+          baldes é realizada a ordenação. É realizada um divisão entre um interval definido em n baldes de mesmo tamanho
+          e distribuir os elementos nos
+          seus respectivos baldes. Com os elementos distribuídos uniformemente esperado a mesma quantidade em cada
+          balde. Após isso é executado um algoritmo de ordenação qualquer em cada um dos baldes.
+        </p>
+        <div class="item"><img src="imagem/bucketsort-1.png"></div>
+
+
+
+      </div>
+
+
+      <br>
+      <br>
+
+    </div>
+  </section>
+  <footer class="rodape">
+    <nav id="nav2">
+      <ul id="menu" role="menu">
+        <li><a href="conceitos.html">TOPO</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
